@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "filesGlob": [
+    "../typings/tsd.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "!node_modules/**"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "files": [
+    "../typings/tsd.d.ts",
+    "services/search.ts",
+    "app/app.tsx",
+    "app/init.tsx",
+    "app/router.tsx",
+    "components/sidebar.tsx",
+    "views/dashboard.tsx",
+    "views/planner.tsx",
+    "views/search.tsx"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
