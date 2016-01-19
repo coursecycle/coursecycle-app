@@ -7,6 +7,12 @@ set :repo_url, 'git@github.com:coursecycle/coursecycle-app.git'
 # Default branch is :master
 set :branch, 'develop'
 
+# Set npm defaults
+set :npm_flags, '--silent --no-spin' # default
+
+# Set Gulp tasks
+set :gulp_tasks, 'deploy'
+
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, '/var/www/my_app_name'
 
