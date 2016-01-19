@@ -31,6 +31,14 @@ gulp.task('default', function() {
   );
 });
 
+gulp.task('deploy', function() {
+  rs(
+    'clean',
+    'copy',
+    ['build', 'less']
+  );
+});
+
 gulp.task('less', function() {
   gulp.src('./styles/**/*.less')
     .pipe(plugins.less())
